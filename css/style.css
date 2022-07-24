@@ -1,0 +1,800 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* FUENTES */
+
+
+
+@font-face {
+    font-family: neuzeit;
+    src: url(../fonts/neuzeit.ttf);
+}
+
+
+@font-face {
+    font-family: neuzeit-light;
+    src: url(../fonts/neuzeit-light.otf);
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url(../fonts/proxima-nova.otf);
+}
+
+@font-face {
+    font-family: neuzeit-bold;
+    src: url(../fonts/neuzeit-bold-cond.otf);
+}
+
+@font-face {
+    font-family: proxima-nova-thin;
+    src:url(../fonts/proxima-nova-thin-pu.otf)
+}
+
+@font-face {
+    font-family: proxima-nova-ligth;
+    src:url(../fonts/proxima-nova-light.otf)
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* HEADER */
+
+
+
+
+.flex-container-header {
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    width: 100%;
+    font-family: neuzeit-light;
+    font-weight: lighter;
+    font-size: small;
+    /* position: fixed; */
+    background-color: white;
+    z-index: 2;
+}
+
+
+.logo {
+    text-align: center;   
+    margin-left: 30px;
+    font-family: neuzeit-light;
+    font-size: small;
+    }
+
+.logo img {
+    height: 8vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+
+ul a {
+    padding: 15px;
+    color: black;
+    transition:all 1s ease;
+}
+
+ul li:hover {
+    transform: translateY(-15%);
+}
+
+.inscription {
+    background-color: rgb(85, 20, 20);
+    border-radius: 20px;
+    color: white;
+    padding: 9px;
+    margin-left: 20px;
+}
+
+
+.parpadea {
+  
+        animation-name: parpadeo;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      
+        -webkit-animation-name:parpadeo;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+      }
+      
+      @-moz-keyframes parpadeo{  
+        0% { opacity: 1.0; }
+        50% { opacity: 0.0; }
+        100% { opacity: 1.0; }
+      }
+      
+      @-webkit-keyframes parpadeo {  
+        0% { opacity: 1.0; }
+        50% { opacity: 0.0; }
+         100% { opacity: 1.0; }
+      }
+      
+      @keyframes parpadeo {  
+        0% { opacity: 1.0; }
+         50% { opacity: 0.0; }
+        100% { opacity: 1.0; }
+      }
+    
+
+
+
+
+
+
+/* CONTENIDO PRINCIPAL */
+
+
+
+    
+.text_header {
+    color: white; 
+    text-align: left;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 170px;
+    padding-left: 300px;
+    position:relative;
+    z-index:2;    
+}
+
+.span {
+    background-color:  rgba(76, 76, 11, 0.553);
+    font-family: proxima-nova;
+    font-size: 20px;
+    padding: 15px 30px;
+    color: white;
+    display: inline;
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 4px;
+    transition: 0.2s;
+}
+
+.span:hover {
+    background-color:darkred;
+    box-shadow: 0 0 10px darkred, 0 0 40px darkred;
+}
+
+h1 {
+    font-size: 4rem;
+    max-width: 7ch;
+    font-family: neuzeit-bold;
+    font-style:italic;
+    font-weight: bolder;
+}
+
+.text_header h2 {
+    font-family:proxima-nova;
+    font-weight: lighter;
+    margin: 40px 0;
+    font-size: 23px;
+}
+
+
+video {
+     opacity: 1;
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     object-fit:cover;  
+    }
+
+
+
+
+
+/* SECCION 1 */
+
+
+
+
+
+.main2 {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 100vh;   
+    overflow: hidden;
+}
+
+.main2_text p {
+    max-width: 40ch;
+    font-size: 20px;
+    font-family: proxima-nova-ligth;
+    line-height: 39px;
+    padding-top: 12px;
+}
+
+.main2_text>h2 {
+    font-family: neuzeit;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.main2_img>img {
+    height: 480px;
+    box-shadow: 5px 8px 12px black;
+}
+
+
+
+
+/* SECCION 2 */
+
+
+
+
+
+.aside1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 45px;    
+    height: 100vh;    
+}
+
+.online {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.online h2 {
+    font-size: 50px;
+    margin-bottom: 3rem;
+    font-family: neuzeit;
+}
+
+.online ol {
+    margin-bottom: 30px;
+    font-family: proxima-nova-thin;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 45px;
+    list-style-type: none;
+}
+
+.online p {
+    background-color: rgb(85, 20, 20);
+    color: white;
+    padding: 15px;
+    font-family: proxima-nova-ligth;
+    font-weight: bold;
+}
+
+
+.img_aside {
+    height: 75vh; 
+    box-shadow: 5px 8px 12px black;   
+    margin-top: 27px;
+}
+
+
+
+
+
+/* SECCION 3 */
+
+
+
+
+
+.article1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    text-align: center;
+    font-size: 30px;
+    height: 100vh;    
+}
+
+.article1 h3 {
+    font-family: neuzeit;
+    font-size: 60px;
+}
+
+
+.text_ca {
+    font-size: 22px;
+    font-family: proxima-nova;
+    line-height: 55px;
+    font-weight: bolder;
+    z-index: 2;
+    text-shadow: 0 0 2px white;
+    padding: 0 30px;
+}
+
+.level {
+    background-color: rgb(85, 20, 20) ;
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-family: proxima-nova-thin;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.level:hover {
+    transform: scale(1.1);
+    box-shadow: 7px 8px 15px black;
+}
+
+.a_level {
+    color: white;
+}
+
+.img_fondo {
+    z-index: -2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+/* SECCION 4 */
+
+
+
+
+
+.aside2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 120vh;    
+
+}
+
+
+.aside2 h4 {
+    max-width: 10ch;
+    font-size:55px;
+    text-align: center;
+    font-family: neuzeit;
+}
+
+
+.aside2 ol {
+    font-family: proxima-nova-ligth;
+    font-size:19px;
+    line-height: 38px;
+    max-width: 75ch;
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+/* SECCION 5 y SECCION 6 */
+
+
+
+.pin {
+    justify-content: center;
+}
+
+
+.article2 , .article3 {
+    text-align: center;
+    font-family: neuzeit;
+    font-size: 45px;
+    margin: 50px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.article2>h3, .article3>h3 {
+    line-height: 70px;
+}
+
+.article3 {
+    margin-top: 65px;
+}
+
+
+
+.grid-container1, .grid-container2 {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3,min-content);
+    column-gap: 7rem;
+    justify-content: center; 
+    align-content: center;  
+    font-family: proxima-nova-light;
+    font-size: 22px;
+}
+
+.grid-container1 {
+    background-image: url(../assets/images/container1.jpg);
+    background-size: cover;
+}
+
+.grid-container2 {
+    background-image: url(../assets/images/container2.jpg);
+    background-size: cover;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 0px 1px 10px black;
+    transition: all 1s ease;
+    padding: 30px;
+    height: 420px;
+    width: 250px;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
+    box-shadow: 5px 5px 20px black;
+    transform: translateY(-6%);
+}
+
+.article2 ol, .article3 ol {
+    list-style-type: none;
+    margin: 15px 0 40px 0;
+}
+
+.hsk1, .hsk2, .hsk3, .hsk4, .hsk5, .hsk6 {
+    background-color: rgba(85, 20, 20, 0.934);
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*  MAIN ARANCELES */
+
+
+
+
+
+
+.article4 {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(5,20%);
+    grid-template-areas: "a b c d e"
+                         "f g h i j"
+                         "k l m n o";
+   margin-bottom:60px ;
+}
+
+
+.article4 h5 {
+    grid-area: c;
+    text-align: center;
+    font-size: 60px;
+    font-family: neuzeit;
+    margin: 40px 0 35px 0;
+}
+
+
+.month {
+    grid-area: l;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(85, 20, 20);
+    color: black;
+    font-family: proxima-nova-light;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 45px;
+    margin-bottom: 70px;
+}
+
+
+h6, .st_p {
+    font-style: normal;
+    grid-area: g;
+    font-size: 40px ;
+    font-family: neuzeit;
+    margin-top: 25px;
+    color: white;
+}
+
+
+
+.nd_p {
+    font-style: normal;
+    color: white;
+    line-height: 45px ;
+}
+
+
+
+.year {
+    grid-area: n;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(85, 20, 20);
+    color: black;
+    font-family: proxima-nova-light;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 45px;
+    margin-bottom: 70px;
+}
+
+h7, .st_pp {
+    font-style: normal;
+    grid-area: i;
+    font-size: 40px ;
+    font-family: neuzeit;
+    margin-top: 25px;
+    color: white;
+}
+
+.st_p, .st_pp {
+    margin-bottom: 50px;
+}
+
+
+.year, .month {
+    padding: 25px;
+    box-shadow: 0 5px 17px black;
+    transition:all 1s ease;
+}
+
+.year:hover, .month:hover {
+    transform:scale(1.10);
+}
+
+  
+
+
+/* BOTON */
+
+
+
+
+.boton{
+    display: grid;
+    grid-template-areas: "left . . . . .center . . . . . right";
+}
+
+.up {
+    grid-area: rigth;
+    width: 170px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color:burlywood;
+    border: ridge 2px brown;
+    transition: all .5s ease-out;
+}
+
+
+.up:hover {
+    transform: translateX(14%);   
+}
+
+
+
+
+
+
+/* PIE DE PAGINA */
+
+
+.dark_logo {
+    padding: 10px;
+}
+
+
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 13vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+.footer_div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 30px;
+    align-self: center;
+    font-size: 18px;
+    font-family: neuzeit-light;
+    margin-left: 90px;
+
+
+}
+
+
+
+
+
+.main_ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow:hidden;  
+}
+
+.icon {
+    position: relative;
+    /* width: 80px; */
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover:nth-child(1) {
+    background-color: #e60073;
+    box-shadow:  0 0 20px #e60073 ;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow:  0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366 ;
+}
+
+.icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow:  0 0 20px #1da1f2 ;
+}
+
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGINA DE INSCRIPCION */
+
+
+
+
+.form_container{ 
+    display: grid;
+    grid-template-areas: "a"
+                        "b" ;
+    grid-template-columns: repeat(1, auto);
+    background-image: url(../assets/images/option6.jpg);
+    background-size:cover ;
+    background-position:top;
+    height: 150vh;
+    justify-items: center;
+}
+
+
+.form_container>h4 {
+    grid-area: a;
+    font-family: neuzeit;
+    font-size: 35px;
+    line-height: 50px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.668);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+
+
+.form {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.599);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    height: 70vh;
+    width: 30vw;
+    /* margin: auto; */
+    box-shadow: 5px 8px 12px black;
+
+}
+
+.form input, select {
+    padding: 10px 50px;
+    margin: 15px 0;
+}
+
+.send, .reset {
+    transition: all .5s ease;
+}
+
+.send:hover{
+    background-color: yellowgreen;
+}
+
+.reset:hover {
+    background-color:darkgray;
+}
