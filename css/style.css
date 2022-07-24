@@ -11,6 +11,7 @@
 
 
 
+
 @font-face {
     font-family: neuzeit;
     src: url(../fonts/neuzeit.ttf);
@@ -48,6 +49,8 @@
 a{
     text-decoration: none;
 }
+
+
 
 
 
@@ -151,6 +154,7 @@ ul li:hover {
 
 
 /* CONTENIDO PRINCIPAL */
+
 
 
 
@@ -414,6 +418,7 @@ video {
 
 
 
+
 .pin {
     justify-content: center;
 }
@@ -617,12 +622,12 @@ h7, .st_pp {
     margin-bottom: 20px;
     background-color:burlywood;
     border: ridge 2px brown;
-    transition: all .5s ease-out;
+    transition: font-size 500ms linear 0s;
 }
 
 
 .up:hover {
-    transform: translateX(14%);   
+    font-size: 20px;   
 }
 
 
@@ -661,8 +666,6 @@ h7, .st_pp {
 
 
 }
-
-
 
 
 
